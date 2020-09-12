@@ -7,14 +7,9 @@
       <option name="url" value="https://maven.aliyun.com/nexus/content/groups/public" />
     </remote-repository>
     <remote-repository>
-      <option name="id" value="rdc-releases" />
-      <option name="name" value="rdc-releases" />
-      <option name="url" value="https://packages.aliyun.com/maven/repository/2011598-release-n6ehoC/" />
-    </remote-repository>
-    <remote-repository>
-      <option name="id" value="rdc-snapshots" />
-      <option name="name" value="rdc-snapshots" />
-      <option name="url" value="https://packages.aliyun.com/maven/repository/2011598-snapshot-t0Xcva/" />
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="https://maven.aliyun.com/repository/public" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="central" />
@@ -22,14 +17,24 @@
       <option name="url" value="https://repo1.maven.org/maven2" />
     </remote-repository>
     <remote-repository>
-      <option name="id" value="jboss.community" />
-      <option name="name" value="JBoss Community repository" />
-      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+      <option name="id" value="rdc-releases" />
+      <option name="name" value="rdc-releases" />
+      <option name="url" value="https://packages.aliyun.com/maven/repository/2011598-release-n6ehoC/" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="snapshots" />
       <option name="name" value="snapshots" />
       <option name="url" value="https://maven.aliyun.com/nexus/content/groups/public" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="rdc-snapshots" />
+      <option name="name" value="rdc-snapshots" />
+      <option name="url" value="https://packages.aliyun.com/maven/repository/2011598-snapshot-t0Xcva/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="jboss.community" />
+      <option name="name" value="JBoss Community repository" />
+      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
     </remote-repository>
   </component>
 </project>

@@ -1,17 +1,18 @@
-package net.sk32.toy;
+package net.sk32.toy.boot.autoconfigure;
 
-public class ToyIocApplication {
+public class TyApplication {
     private final Class<?> primarySource;
 
-    public ToyIocApplication(Class<?> primarySource) {
+    public TyApplication(Class<?> primarySource) {
         this.primarySource = primarySource;
     }
 
     public static void run(Class<?> primarySource, String... args) {
-        new ToyIocApplication(primarySource).run(args);
+        new TyApplication(primarySource).run(args);
     }
 
     private void run(String[] args) {
+        // Banner
         System.out.println("" +
                 "  _______          _____ ____   _____ \n" +
                 " |__   __|        |_   _/ __ \\ / ____|\n" +
@@ -21,6 +22,12 @@ public class ToyIocApplication {
                 "    |_|\\___/ \\__, |_____\\____/ \\_____|\n" +
                 "              __/ |                   \n" +
                 "             |___/         ToyIOC v1.0");
-        System.out.println(primarySource);
+
+        TyApplicationContext context = createApplicationContext();
+        context.loadBeans(primarySource);
+    }
+
+    private TyApplicationContext createApplicationContext() {
+        return TyApplicationContext.getInstance();
     }
 }
